@@ -1,5 +1,8 @@
 # Customer Churn Prediction using Machine Learning 📊
 
+[![Python](https://img.shields.io/badge/Python-3.11-blue?logo=python&logoColor=white)](https://www.python.org/)
+[![Jupyter Notebook](https://img.shields.io/badge/Jupyter-Notebook-orange?logo=jupyter&logoColor=white)](https://jupyter.org/)
+
 ## Project Overview
 Predict whether a telecom customer will churn (cancel service) using supervised learning. The notebook implements data cleaning, feature engineering, model training, evaluation and a short insights report to support retention decisions.
 
@@ -148,5 +151,6 @@ Author: Rezaul Islam. [Linkedin](https://www.linkedin.com/in/md-rezaul-islam-cse
   
 
 [License: MIT](License)
+
 
 
