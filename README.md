@@ -65,11 +65,47 @@ Notes:
 | KNN (K=9)                       |   0.77005  |    0.569444 | 0.548128 | 0.558583 |  0.799145 |  205 |  155 |  880 |  169 |
 
 
-## Findings / Discussion
-- Short tenure, high monthly charges, and month-to-month contracts are frequently associated with churn.  
-- Feature importances from tree-based models highlight top drivers (e.g., tenure, MonthlyCharges, Contract type).  
-- Trade-offs: prioritize Recall (catch churners) vs. cost of False Positives (unnecessary retention offers).  
-- Recommendations: use Random Forest or a tuned ensemble for deployment; apply periodic retraining and interpretability tools (SHAP/LIME) before production.
+## Model Performance Discussion
+
+1. **Random Forest**
+   - **ROC-AUC:** 0.8446 (highest) – excellent class distinction
+   - **Precision:** 0.6679 – most reliable positive predictions
+   - **Recall:** 0.4947 – slightly lower than Logistic Regression
+   - Robust and less prone to overfitting
+
+2. **Logistic Regression**
+   - Best balance between precision and recall
+   - **F1-Score:** 0.5837 (highest)
+   - Identifies more true positives than Random Forest but produces more false positives
+   - Strong alternative when recall is important
+
+3. **Decision Tree**
+   - Performs respectably with recall close to Logistic Regression
+   - Slightly lower precision and ROC-AUC than Random Forest
+   - More prone to misclassification (higher false positives)
+   - Useful for interpretability but weaker generalization
+
+4. **KNN (k=9)**
+   - Weakest overall performance
+   - Lowest accuracy, precision, and ROC-AUC
+   - Produces the highest number of false positives
+   - Least suitable for reliable classification
+
+---
+
+## Best Model Recommendation
+
+1. **Recommended: Random Forest**
+   - **ROC-AUC:** highest, strong discriminative power
+   - **Precision:** highest, reliable positive predictions
+   - Stable performance, resistant to overfitting
+   - Balanced trade-off between accuracy and reliability
+
+2. **Alternative (if recall-focused): Logistic Regression**
+   - Best for identifying as many positive cases as possible
+   - Slightly higher false positives are acceptable
+   - Interpretable and consistent performance
+
 
 ## Libraries Used
 - pandas, numpy  
@@ -112,4 +148,5 @@ Author: Rezaul Islam. [Linkedin](https://www.linkedin.com/in/md-rezaul-islam-cse
   
 
 [License: MIT](License)
+
 
