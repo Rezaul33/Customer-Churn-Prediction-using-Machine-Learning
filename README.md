@@ -81,7 +81,7 @@ Notes:
 ## How to run (Windows)
 1. Clone the repository:  
 ```bash
-git clone https://github.com/Rezaul33/Titanic-Exploratory-Data-Analysis-EDA
+git clone https://github.com/Rezaul33/Customer-Churn-Prediction-using-Machine-Learning
 ```
 2. Open PowerShell / cmd at project root:
    - ```python -m venv .venv```
@@ -110,4 +110,5 @@ Customer-Churn-Prediction-using-Machine-Learning
 ## Author & License
 Author: Rezaul Islam. [Linkedin](https://www.linkedin.com/in/md-rezaul-islam-cse/)
   
+
 [License: MIT](License)
