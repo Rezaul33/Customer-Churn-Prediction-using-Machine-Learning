@@ -65,7 +65,7 @@ Notes:
 | KNN (K=9)                       |   0.77005  |    0.569444 | 0.548128 | 0.558583 |  0.799145 |  205 |  155 |  880 |  169 |
 
 
-## Findings / Discussion (example)
+## Findings / Discussion
 - Short tenure, high monthly charges, and month-to-month contracts are frequently associated with churn.  
 - Feature importances from tree-based models highlight top drivers (e.g., tenure, MonthlyCharges, Contract type).  
 - Trade-offs: prioritize Recall (catch churners) vs. cost of False Positives (unnecessary retention offers).  
@@ -76,7 +76,7 @@ Notes:
 - scikit-learn  
 - matplotlib, seaborn  
 - notebook / ipython  
-(See requirements.txt for pinned versions.)
+(See [requirements.txt](requirements.txt) for pinned versions.)
 
 ## How to run (Windows)
 1. Clone the repository:  
@@ -112,3 +112,4 @@ Author: Rezaul Islam. [Linkedin](https://www.linkedin.com/in/md-rezaul-islam-cse
   
 
 [License: MIT](License)
+
